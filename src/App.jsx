@@ -6,7 +6,14 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, View, Image} from 'react-native';
+import {
+  SafeAreaView,
+  StyleSheet,
+  View,
+  Image,
+  ImageBackground,
+  ScrollView,
+} from 'react-native';
 import {PaperProvider, Searchbar, Text} from 'react-native-paper';
 
 function App() {
@@ -15,7 +22,7 @@ function App() {
   return (
     <PaperProvider>
       <SafeAreaView>
-        <View style={styles.root}>
+        <ScrollView style={styles.root}>
           <Searchbar
             label="Search Pasta, Bread, etc"
             value={text}
@@ -29,6 +36,7 @@ function App() {
 
           {/* start popular for you */}
           <Text style={styles.heading_1}>Popular for You</Text>
+
           <View
             style={{
               marginTop: 15,
@@ -61,8 +69,41 @@ function App() {
               </View>
             ))}
           </View>
+
           {/* end of popular for you */}
-        </View>
+
+          {/* start of new recipes */}
+          <Text style={styles.heading_1}>New Recipes</Text>
+
+          <ScrollView horizontal={true}>
+            <View style={{flexDirection: 'row', gap: 20}}>
+              {[...new Array(8)].map((items, key) => (
+                <View style={{borderRadius: 10, marginTop: 15}} key={key}>
+                  <ImageBackground
+                    source={require('./assets/Dummy.jpg')}
+                    resizeMode="cover"
+                    imageStyle={{borderRadius: 10}}
+                    style={{
+                      height: 160,
+                      width: 130,
+                      padding: 10,
+                      justifyContent: 'flex-end',
+                    }}>
+                    <Text
+                      style={{color: '#fff', fontSize: 15, fontWeight: 500}}>
+                      Banana {'\n'}Lemonilo
+                    </Text>
+                  </ImageBackground>
+                </View>
+              ))}
+            </View>
+          </ScrollView>
+          {/* end of new recipes */}
+
+          {/* start of popular recipes */}
+          <Text style={styles.heading_1}>Popular Recipes</Text>
+          {/* end of popular recipes */}
+        </ScrollView>
       </SafeAreaView>
     </PaperProvider>
   );
@@ -70,8 +111,6 @@ function App() {
 
 const styles = StyleSheet.create({
   root: {
-    backgroundColor: '#fff',
-    height: 800,
     padding: 20,
   },
   searchBox: {

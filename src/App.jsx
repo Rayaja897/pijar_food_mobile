@@ -27,7 +27,6 @@ function App() {
             label="Search Pasta, Bread, etc"
             value={text}
             style={styles.searchBox}
-            mode="outlined"
             outlineStyle={{
               borderRadius: 15,
             }}
@@ -102,6 +101,31 @@ function App() {
 
           {/* start of popular recipes */}
           <Text style={styles.heading_1}>Popular Recipes</Text>
+
+          {[...new Array(8)].map((items, key) => (
+            <View
+              style={{flexDirection: 'row', gap: 15, marginTop: 15}}
+              key={key}>
+              <Image source={require('./assets/Dummy-2.png')} />
+
+              <View>
+                <Text style={{color: '#666666', fontSize: 16, fontWeight: 800}}>
+                  Teriyaki Salmon
+                </Text>
+                <Text style={{color: '#B6B6B6'}}>spicy, salted</Text>
+
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    alignItems: 'center',
+                    gap: 5,
+                  }}>
+                  <Image source={require('./assets/icon-star.png')} />
+                  <Text style={{color: '#B6B6B6'}}>4.7</Text>
+                </View>
+              </View>
+            </View>
+          ))}
           {/* end of popular recipes */}
         </ScrollView>
       </SafeAreaView>

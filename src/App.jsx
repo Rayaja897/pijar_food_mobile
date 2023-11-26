@@ -24,7 +24,7 @@ function App() {
       <SafeAreaView>
         <ScrollView style={styles.root}>
           <Searchbar
-            label="Search Pasta, Bread, etc"
+            placeholder="Search Pasta, Bread, etc"
             value={text}
             style={styles.searchBox}
             outlineStyle={{
@@ -135,7 +135,7 @@ function App() {
 
 const styles = StyleSheet.create({
   root: {
-    padding: 20,
+    padding: 15,
   },
   searchBox: {
     backgroundColor: '#EFEFEF',

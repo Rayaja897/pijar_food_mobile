@@ -1,0 +1,29 @@
+[
+  {
+    "image": "https://img-global.cpcdn.com/recipes/1f1206f64383b50a/1360x964cq70/sop-oyong-wortel-bakso-foto-resep-utama.webp",
+    "title": "Sop Oyong Wortel Bakso",
+    "slug": "sop-oyong-wortel-bakso",
+    "ingridients": "1 buah oyong, 1 buah wortel, 5 butir bakso iris bulat, 1/4 buah bawang bombay, cincang, 2 siung bawang putih, cincang, 300 ml air, 1 batang daun bawang, iris, Secukupnya garam dan kaldu bubuk, Secukupnya minyak goreng",
+    "taste":"delicious, savory",
+    "youtube": {
+      "title": "Resep Sup Oyong Bakso",
+      "link": "https://www.youtube.com/watch?v=gLKGxJhI-Rs"
+    },
+    "made":"Andayani",
+    "rating":"4,9",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/1f1206f64383b50a/1360x964cq70/sop-oyong-wortel-bakso-foto-resep-utama.webp",
+    "title": "Sop Oyong Wortel Bakso",
+    "slug": "sop-oyong-wortel-bakso",
+    "ingridients": "1 buah oyong, 1 buah wortel, 5 butir bakso, iris bulat, 1/4 buah bawang bombay, cincang, 2 siung bawang putih, cincang, 300 ml air, 1 batang daun bawang, iris, Secukupnya garam dan kaldu bubuk, Secukupnya minyak goreng",
+    "youtube": {
+      "title": "Resep Sup Oyong Bakso",
+      "link": "https://www.youtube.com/watch?v=gLKGxJhI-Rs"
+    },
+    "isPopular": false,
+    "isNew": false
+  }
+]

@@ -148,43 +148,45 @@ function HomeScreen({navigation}) {
         {/* start of popular recipes */}
         <Text style={styles.heading_1}>Popular Recipes</Text>
 
-        {recipeList
-          ?.filter(item => item.isPopular)
-          .map((item, key) => (
-            <TouchableWithoutFeedback
-              key={key}
-              onPress={() => navigation.navigate('Detail Recipe', item)}>
-              <View style={{flexDirection: 'row', gap: 15, marginTop: 15}}>
-                <Image
-                  style={{
-                    width: 60,
-                    height: 60,
-                    resizeMode: 'cover',
-                    borderRadius: 10,
-                  }}
-                  source={{uri: item.image}}
-                />
-
-                <View>
-                  <Text
-                    style={{color: '#666666', fontSize: 16, fontWeight: 800}}>
-                    {item.title}
-                  </Text>
-                  <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
-
-                  <View
+        <View style={{paddingBottom: 25}}>
+          {recipeList
+            ?.filter(item => item.isPopular)
+            .map((item, key) => (
+              <TouchableWithoutFeedback
+                key={key}
+                onPress={() => navigation.navigate('Detail Recipe', item)}>
+                <View style={{flexDirection: 'row', gap: 15, marginTop: 15}}>
+                  <Image
                     style={{
-                      flexDirection: 'row',
-                      alignItems: 'center',
-                      gap: 5,
-                    }}>
-                    <Image source={require('../assets/icon-star.png')} />
-                    <Text style={{color: '#B6B6B6'}}>{item.rating}</Text>
+                      width: 60,
+                      height: 60,
+                      resizeMode: 'cover',
+                      borderRadius: 10,
+                    }}
+                    source={{uri: item.image}}
+                  />
+
+                  <View>
+                    <Text
+                      style={{color: '#666666', fontSize: 16, fontWeight: 800}}>
+                      {item.title}
+                    </Text>
+                    <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
+
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: 5,
+                      }}>
+                      <Image source={require('../assets/icon-star.png')} />
+                      <Text style={{color: '#B6B6B6'}}>{item.rating}</Text>
+                    </View>
                   </View>
                 </View>
-              </View>
-            </TouchableWithoutFeedback>
-          ))}
+              </TouchableWithoutFeedback>
+            ))}
+        </View>
         {/* end of popular recipes */}
       </ScrollView>
     </SafeAreaView>
@@ -193,9 +195,7 @@ function HomeScreen({navigation}) {
 
 const styles = StyleSheet.create({
   root: {
-    paddingTop: 5,
-    paddingRight: 15,
-    paddingLeft: 15,
+    padding: 15,
   },
   searchBox: {
     backgroundColor: '#EFEFEF',

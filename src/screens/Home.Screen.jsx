@@ -91,29 +91,56 @@ function HomeScreen({navigation}) {
 
         <ScrollView horizontal={true}>
           <View style={{flexDirection: 'row', gap: 20}}>
-            {[...new Array(8)].map((items, key) => (
-              <TouchableWithoutFeedback
-                key={key}
-                onPress={() => navigation.navigate('Detail Recipe', item)}>
-                <View style={{borderRadius: 10, marginTop: 15}}>
-                  <ImageBackground
-                    source={require('../assets/Dummy.jpg')}
-                    resizeMode="cover"
-                    imageStyle={{borderRadius: 10}}
-                    style={{
-                      height: 160,
-                      width: 130,
-                      padding: 10,
-                      justifyContent: 'flex-end',
-                    }}>
-                    <Text
-                      style={{color: '#fff', fontSize: 15, fontWeight: 500}}>
-                      Banana {'\n'}Lemonilo
-                    </Text>
-                  </ImageBackground>
-                </View>
-              </TouchableWithoutFeedback>
-            ))}
+            {recipeList
+              ?.filter(item => item.isNew)
+              .map((item, key) => (
+                <TouchableWithoutFeedback
+                  key={key}
+                  onPress={() => navigation.navigate('Detail Recipe', item)}>
+                  <View style={{borderRadius: 10, marginTop: 15}}>
+                    <ImageBackground
+                      source={{uri: item.image}}
+                      resizeMode="cover"
+                      imageStyle={{borderRadius: 10}}
+                      style={{
+                        height: 160,
+                        width: 130,
+                        padding: 10,
+                        justifyContent: 'flex-end',
+                      }}>
+                      <Text
+                        numberOfLines={1}
+                        style={{
+                          color: '#fff',
+                          fontSize: 15,
+                          fontWeight: 500,
+                          textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                          textShadowOffset: {width: -1, height: 1},
+                          textShadowRadius: 10,
+                        }}>
+                        {item.title}
+                      </Text>
+                      <View
+                        style={{
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                          gap: 5,
+                        }}>
+                        <Image source={require('../assets/icon-star.png')} />
+                        <Text
+                          style={{
+                            color: '#fff',
+                            textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                            textShadowOffset: {width: -1, height: 1},
+                            textShadowRadius: 10,
+                          }}>
+                          {item.rating}
+                        </Text>
+                      </View>
+                    </ImageBackground>
+                  </View>
+                </TouchableWithoutFeedback>
+              ))}
           </View>
         </ScrollView>
         {/* end of new recipes */}
@@ -166,7 +193,9 @@ function HomeScreen({navigation}) {
 
 const styles = StyleSheet.create({
   root: {
-    padding: 15,
+    paddingTop: 5,
+    paddingRight: 15,
+    paddingLeft: 15,
   },
   searchBox: {
     backgroundColor: '#EFEFEF',

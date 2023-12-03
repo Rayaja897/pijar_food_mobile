@@ -4,26 +4,149 @@
     "title": "Sop Oyong Wortel Bakso",
     "slug": "sop-oyong-wortel-bakso",
     "ingridients": "1 buah oyong, 1 buah wortel, 5 butir bakso iris bulat, 1/4 buah bawang bombay, cincang, 2 siung bawang putih, cincang, 300 ml air, 1 batang daun bawang, iris, Secukupnya garam dan kaldu bubuk, Secukupnya minyak goreng",
-    "taste":"delicious, savory",
+    "taste": "delicious, savory",
     "youtube": {
       "title": "Resep Sup Oyong Bakso",
       "link": "https://www.youtube.com/watch?v=gLKGxJhI-Rs"
     },
-    "made":"Andayani",
-    "rating":"4,9",
+    "made": "Andayani",
+    "rating": "4,9",
     "isPopular": true,
     "isNew": false
   },
   {
-    "image": "https://img-global.cpcdn.com/recipes/1f1206f64383b50a/1360x964cq70/sop-oyong-wortel-bakso-foto-resep-utama.webp",
-    "title": "Sop Oyong Wortel Bakso",
-    "slug": "sop-oyong-wortel-bakso",
-    "ingridients": "1 buah oyong, 1 buah wortel, 5 butir bakso, iris bulat, 1/4 buah bawang bombay, cincang, 2 siung bawang putih, cincang, 300 ml air, 1 batang daun bawang, iris, Secukupnya garam dan kaldu bubuk, Secukupnya minyak goreng",
+    "image": "https://img-global.cpcdn.com/recipes/b4467432003d6c6a/1360x964cq70/goreng-ayam-balado-foto-resep-utama.webp",
+    "title": "Goreng Ayam Balado",
+    "slug": "goreng-ayam-balado",
+    "ingridients": "1 Kg Ayam, 1 Sdt Garam, 1 sdt Kaldu Ayam Instant, 1/2 Sdt Gula Pasir, Secukupnya Minyak Goreng, Secukupnya Air mendidih, Bumbu Marinasi: 1 Bh Jeruk nipis ukuran besar, 2 Sdt Garam, Bumbu Halus: 15 Siung Bawang Merah, 7 Siung Bawang Putih, 30 Bh Cabe Merah Keriting, 15 Bh Cabe Rawit Hijau (mau merah juga boleh), Bumbu Besar: 1 Bh Serai, geprek, 3 Ruas Laos, geprek, 3 Lembar Daun salam, 5 lembar daun jeruk.",
+    "taste": "delicious, spicy, savory",
     "youtube": {
-      "title": "Resep Sup Oyong Bakso",
-      "link": "https://www.youtube.com/watch?v=gLKGxJhI-Rs"
+      "title": "Resep Ayam Balado | Olahan Ayam Balado | Cara Membuat Ayam Balado Empuk dan Enak",
+      "link": "https://www.youtube.com/watch?v=Hnlm2sWnOVo"
     },
-    "isPopular": false,
+    "made": "AmbarShaf",
+    "rating": "5,0",
+    "isPopular": true,
     "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/a09bea714cfb9ab4/1360x964cq70/ayam-fillet-rica-rica-foto-resep-utama.webp",
+    "title": "Ayam Fillet Rica-rica",
+    "slug": "ayam-fillet-rica-rica",
+    "ingridients": "300 gr ayam fillet (bagian paha), 1 buah tomat merah kecil (potong2), 1 batang daun bawang (potong2), 1 lembar daun jeruk, 1 ruas jahe (geprek), 200 ml air, Secukupnya gula, garam, dan kaldu bubuk, Bumbu halus: 4 siung bawang merah, 2 siung bawang putih, 10 buah cabe merah (boleh campur rawit/sesuaikan selera), 1 butir kemiri (sangrai dulu), 1/4 sdt kunyit bubuk.",
+    "taste": "delicious, savory, spicy",
+    "youtube": {
+      "title": "RICA RICA AYAM FILLET SUPER ENAK~MENU SAHUR DAN BUKA PUASA",
+      "link": "https://www.youtube.com/watch?v=WQb9o9HEUmY"
+    },
+    "made": "VayKitchen",
+    "rating": "4,9",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/762220f6af9addef/1360x964cq70/pindang-petai-bumbu-merah-foto-resep-utama.webp",
+    "title": "Pindang Petai Bumbu Merah",
+    "slug": "pindang-petai-bumbu-merah",
+    "ingridients": "4 ekor pindang (buang kepala dan duri, goreng hingga matang), 2 papan petai, 1 batang daun bawang, Secukupnya minyak goreng, Sedikit air, Seasoning: 1/3 sdt garam, 1/3 sdt gula pasir, 1/4 sdt kaldu bubuk, Bumbu Halus: 5 siung bawang merah, 2 siung bawang putih, 1 buah cabai merah besar, 2 buah cabai rawit.",
+    "taste": "delicious, spicy",
+    "youtube": {
+      "title": "Pindang Tongkol Sambal Pete",
+      "link": "https://www.youtube.com/watch?v=5LdEZqfUizM"
+    },
+    "made": "LiaAriani",
+    "rating": "4,8",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/4b8b1540ea638307/1360x964cq70/sambel-teri-pete-foto-resep-utama.webp",
+    "title": "Sambel Teri Pete",
+    "slug": "sambel-teri-pete",
+    "ingridients": "1 liter teri halus, 3 genggam pete kupas (potong dua), 15 siung bawang merah, 5 siung bawang putih, 3 biji cabe besar (iris kasar), 15 biji cabe rawit, 7 biji cabe keriting (stok segitu aja, potong2), 2 biji cabe katokkon (iris2), 2 biji terasi, 1 sdm gula merah, 2 sdt gula pasir, Secukupnya garam dan penyedap rasa.",
+    "taste": "delicious, savory",
+    "youtube": {
+      "title": "SAMBEL TERI PETE, AWAS NASI BAKAL CEPAT HABIS.",
+      "link": "https://www.youtube.com/watch?v=NC3Us6xhVcI"
+    },
+    "made": "DapurIma",
+    "rating": "4,6",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/acf389db34a9c8b5/1360x964cq70/nasi-liwet-pete-dan-teri-magic-com-foto-resep-utama.webp",
+    "title": "Nasi Liwet Pete dan Teri Magic Com",
+    "slug": "nasi-liwet-pete-dan-teri-magic-com",
+    "ingridients": "3 cup beras, 4 siung bawang putih (iris tipis), 8 butir bawang merah (iris tipis), 2 buah cabai merah besar (iris serong), 1 papan Pete kupas (goreng), 100 gr teri, 2 batang serai (geprek), 5 lembar daun salam, 1 ruas lengkuas (geprek), Secukupnya Air matang, Secukupnya Minyak untuk menumis, 1,5 sdt Garam & 1 sdt kaldu jamur, 1 batang daun bawang (iris tipis - optional).",
+    "taste": "delicious, spicy, savory",
+    "youtube": {
+      "title": "Nasi Liwet Rice Cooker, Plus Sambel Pete, Ikan Asin Peda. Bahaya Buat yang Diet.",
+      "link": "https://www.youtube.com/watch?v=LCKaAB1lyK8"
+    },
+    "made": "ArumKusuma",
+    "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/fe7cd2e3112d6cb6/1360x964cq70/sambel-cumi-pete-foto-resep-utama.webp",
+    "title": "Sambel Cumi Pete",
+    "slug": "sambel-cumi-pete",
+    "ingridients": "Secukupnya cumi asin, Pete, Bawang merah, Bawang putih, Cabe rawit, Tomat, Terasi yang sudah dibakar, Gula Jawa, Garam.",
+    "taste": "delicious, spicy",
+    "youtube": {
+      "title": "Resep sambal cumi pete, empuk, antiamis, dan pedasnya nendang",
+      "link": "https://www.youtube.com/watch?v=y8jC5L3Y5-c"
+    },
+    "made": "Anggita",
+    "rating": "4,7",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/39f4b7cab477dc8b/1360x964cq70/balado-kentang-udang-pete-foto-resep-utama.webp",
+    "title": "Balado Kentang Udang Pete",
+    "slug": "balado-kentang-udang-pete",
+    "ingridients": "500 gr kentang, 300 gr udang, 1 papan pete, 3 lembar daun salam, 1 batang sereh (memarkan), 1 sdt garam, 1 sdt kaldu bubuk, 1 sdt gula pasir, Secukupnya minyak goreng, Sedikit air matang. Bumbu Halus: 3 buah cabe merah besar, 5 buah cabe merah keriting, 5-10 buah rawit merah (sesuaikan), 5 siung bawang merah, 3 siung bawang putih, 1 buah tomat merah.",
+    "taste": "delicious, spicy",
+    "youtube": {
+      "title": "Sambal Goreng // Sambal Goreng Kentang Udang Pete // Resep Sambal Goreng //Cara Buat Sambal Goreng",
+      "link": "https://www.youtube.com/watch?v=hG8rtE2sxbI"
+    },
+    "made": "DesiDresviana",
+    "rating": "4,8",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/e52fb2dd6d9ee2b7/1360x964cq70/udang-saos-padangasam-manis-foto-resep-utama.webp",
+    "title": "Udang Saos padang/asam manis",
+    "slug": "udang-saos-padang-asam-manis",
+    "ingridients": "1/2 kg Udang kecil tanpa kepala, Bawang Bombay, Bumbu halus: 6 siung Bawang merah, 5 siung Bawang putih, Cabe rawit 7 biji (sesuai selera), Bumbu pelengkap: 3 Sdm Saos sambal, 2 Sdm Saos tomat, Saos tiram 1 bks (skip jika tidak suka), 1/2 Sdt Ladaku, Secukupnya Garam, Secukupnya Gula, Secukupnya Penyedap, Air 400ml (sesuaikan).",
+    "taste": "delicious, spicy, sweet and sour",
+    "youtube": {
+      "title": "Menu Resto Pindah Ke Rumah. Udang Asam Manis/Sweet and Sour Prawns.",
+      "link": "https://www.youtube.com/watch?v=IND5YxIpSkE"
+    },
+    "made": "CeceromedKitchen",
+    "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/d4770fd9fc6fb863/1360x964cq70/707-balado-telor-rebus-dan-pete-foto-resep-utama.webp",
+    "title": "Balado Telor rebus dan pete",
+    "slug": "balado-telor-rebus-dan-pete",
+    "ingridients": "4 Butir telur rebus, Bumbu Halus: 10 Cabe Merah Keriting, 5 Buah Cabe Merah Rawit, 5 Siung Bawang Merah, 3 Siung Bawang Putih, 1 Buah Tomat. Tambahan: Secukupnya Minyak Sayur untuk menggoreng telur dan menumis bumbu, Sesuai selera Gula pasir dan Garam serta kaldu bubuk (Royco dsb), 2 papan pete.",
+    "taste": "delicious, spicy",
+    "youtube": {
+      "title": "TELUR BALADO PETE",
+      "link": "https://www.youtube.com/watch?v=KlaF3RYjlzQ"
+    },
+    "made": "Naqiyyah",
+    "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
   }
 ]

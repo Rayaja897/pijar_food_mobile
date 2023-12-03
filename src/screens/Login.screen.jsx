@@ -13,10 +13,10 @@ function LoginScreen({navigation}) {
           fontWeight: 'bold',
           textAlign: 'center',
         }}>
-        Login
+        Welcome !
       </Text>
       <Text style={{color: '#999999', textAlign: 'center'}}>
-        Create new account to access all feautures
+        Log in to your exiting account.
       </Text>
 
       <View style={{padding: 25}}>

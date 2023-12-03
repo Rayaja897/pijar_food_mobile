@@ -5,21 +5,57 @@ import {
   ImageBackground,
   TouchableWithoutFeedback,
   Linking,
-  SectionList
+  Image,
 } from 'react-native';
-import {Text, Button} from 'react-native-paper';
+import {Text, Button, TextInput} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
+import firestore from '@react-native-firebase/firestore';
 
 function DetailRecipeScreen({navigation, route}) {
   const [bodyView, setBodyView] = React.useState('ingredients');
-  const {image, title, ingridients, youtube, made} = route.params;
+  const {image, title, ingridients, youtube, made, slug} = route.params;
+  const [commentList, setCommentList] = React.useState([]);
+  const [message, setMessage] = React.useState('');
+
+  React.useEffect(() => {
+    handleGetComment();
+  }, []);
+
+  const handleGetComment = () => {
+    firestore()
+      .collection('comments')
+      .where('recipeSlug', '==', slug)
+      .get()
+      .then(querySnapshot => {
+        let tempData = [];
+        querySnapshot.forEach(documentSnapshot => {
+          tempData.push(documentSnapshot);
+        });
+        setCommentList(tempData);
+      });
+  };
+
+  const handleComment = () => {
+    firestore()
+      .collection('comments')
+      .add({
+        name: 'Ada Wong',
+        photo: 'https://i.pravatar.cc/300',
+        recipeSlug: slug,
+        message: message,
+        created_at: new Date().getTime(),
+      })
+      .then(() => {
+        handleGetComment();
+      });
+  };
 
   return (
     <ScrollView>
       {/* header */}
       <View>
         <ImageBackground
-          source={{uri: image }}
+          source={{uri: image}}
           resizeMode="cover"
           style={{height: 400, padding: 15}}>
           <TouchableWithoutFeedback onPress={() => navigation.goBack()}>
@@ -102,6 +138,21 @@ function DetailRecipeScreen({navigation, route}) {
             }}>
             Video Step
           </Button>
+          {/* <Button
+            onPress={() => setBodyView('comments')}
+            labelStyle={{
+              fontSize: 20,
+              ...(bodyView === 'comments'
+                ? {
+                    color: '#18172B',
+                    paddingBottom: 4,
+                    borderBottomColor: '#EEC302',
+                    borderBottomWidth: 2,
+                  }
+                : {color: '#666666'}),
+            }}>
+            Comments
+          </Button> */}
         </View>
 
         {/* body view */}
@@ -139,6 +190,66 @@ function DetailRecipeScreen({navigation, route}) {
             </TouchableWithoutFeedback>
           </View>
         ) : null}
+
+        {/* {bodyView === 'comments' ? (
+          <View style={{marginTop: 20}}>
+            <TextInput
+              mode="outlined"
+              multiline={true}
+              numberOfLines={4}
+              placeholder="Comment :"
+              style={{backgroundColor: '#FAF7ED'}}
+            />
+          </View>
+        ) : null} */}
+
+        {/* comment view */}
+        <View style={{marginTop: 20}}>
+          <TextInput
+            mode="outlined"
+            multiline={true}
+            numberOfLines={4}
+            placeholder="Comment :"
+            style={{backgroundColor: '#FAF7ED'}}
+            onChangeText={value => setMessage(value)}
+          />
+        </View>
+        <Button
+          mode="contained"
+          style={{
+            margin: 5,
+            marginTop: 30,
+            borderRadius: 5,
+            backgroundColor: '#EFC81A',
+            padding: 3,
+          }}
+          onPress={handleComment}>
+          Post Comment
+        </Button>
+
+        <Text>Comment :</Text>
+
+        {commentList
+          ?.sort(
+            (next, prev) => prev?._data.created_at - next?._data.created_at,
+          )
+          .map((item, key) => (
+            <View
+              style={{flexDirection: 'row', gap: 20, marginTop: 15}}
+              key={key}>
+              <Image
+                source={{uri: item?._data.photo}}
+                height={40}
+                width={40}
+                borderRadius={100}
+              />
+
+              <View>
+                <Text style={{fontWeight: 'bold'}}>{item?._data.name}</Text>
+                <Text>{item?._data.message}</Text>
+              </View>
+            </View>
+          ))}
       </View>
     </ScrollView>
   );

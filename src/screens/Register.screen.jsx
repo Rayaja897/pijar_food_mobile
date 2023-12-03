@@ -3,6 +3,7 @@ import {Image, ScrollView, View, TouchableWithoutFeedback} from 'react-native';
 import {Text, TextInput, Button} from 'react-native-paper';
 
 function RegisterScreen({navigation}) {
+
   return (
     <ScrollView>
       <Text

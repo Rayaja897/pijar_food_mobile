@@ -1,11 +1,66 @@
 import React from 'react';
 import {Image, ScrollView, View, TouchableWithoutFeedback} from 'react-native';
-import {Text, TextInput, Button} from 'react-native-paper';
+import {Text, TextInput, Button, Snackbar} from 'react-native-paper';
+import firestore from '@react-native-firebase/firestore';
 
 function RegisterScreen({navigation}) {
+  const [email, setEmail] = React.useState('');
+  const [fullname, setFullname] = React.useState('');
+  const [password, setPassword] = React.useState('');
+  const [password2, setPassword2] = React.useState('');
+  const [phone, setPhone] = React.useState('');
+  const [visible, setVisible] = React.useState(false);
+  const [snackBg, setSnackBg] = React.useState('');
+  const [messageSnack, setMessageSnack] = React.useState('');
+
+  const onDismissSnackBar = () => setVisible(false);
+
+  const handleRegist = () => {
+    if (password === password2) {
+      firestore()
+        .collection('users')
+        .add({
+          email,
+          fullname,
+          password,
+          phone,
+          created_at: new Date().getTime(),
+        })
+        .then(() => {
+          setVisible(true);
+          setMessageSnack('Register Successfully');
+          setSnackBg('#75b798');
+          setTimeout(() => {
+            navigation.navigate('Login');
+          }, 2000);
+        })
+        .catch(() => {
+          setVisible(true);
+          setMessageSnack('Something wrong in our server');
+          setSnackBg('#842029');
+        });
+    } else {
+      setVisible(true);
+      setMessageSnack('Password is not match');
+      setSnackBg('#842029');
+    }
+  };
 
   return (
     <ScrollView>
+      <Snackbar
+        wrapperStyle={{top: 0}}
+        style={{backgroundColor: snackBg}}
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{
+          label: 'X',
+          onPress: () => {
+            onDismissSnackBar();
+          },
+        }}>
+        <Text style={{color: 'white'}}>{messageSnack}</Text>
+      </Snackbar>
       <Text
         style={{
           marginTop: 90,
@@ -25,6 +80,7 @@ function RegisterScreen({navigation}) {
           placeholder="Name"
           style={{margin: 5}}
           mode="outlined"
+          onChangeText={value => setFullname(value)}
           left={
             <TextInput.Icon
               icon={() => (
@@ -41,6 +97,7 @@ function RegisterScreen({navigation}) {
           placeholder="E-Mail"
           style={{margin: 5}}
           mode="outlined"
+          onChangeText={value => setEmail(value)}
           left={
             <TextInput.Icon
               icon={() => (
@@ -57,6 +114,7 @@ function RegisterScreen({navigation}) {
           placeholder="Phone Number"
           style={{margin: 5}}
           mode="outlined"
+          onChangeText={value => setPhone(value)}
           keyboardType="phone-pad"
           left={
             <TextInput.Icon
@@ -73,6 +131,7 @@ function RegisterScreen({navigation}) {
         <TextInput
           placeholder="Create New Password"
           style={{margin: 5}}
+          onChangeText={value => setPassword(value)}
           secureTextEntry
           mode="outlined"
           left={
@@ -90,6 +149,7 @@ function RegisterScreen({navigation}) {
         <TextInput
           placeholder="Confirm New Password"
           style={{margin: 5}}
+          onChangeText={value => setPassword2(value)}
           secureTextEntry
           mode="outlined"
           left={
@@ -114,7 +174,7 @@ function RegisterScreen({navigation}) {
             backgroundColor: '#EFC81A',
             padding: 3,
           }}
-          onPress={() => console.log('Pressed')}>
+          onPress={handleRegist}>
           CREATE
         </Button>
 

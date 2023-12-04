@@ -198,7 +198,7 @@ const styles = StyleSheet.create({
     padding: 15,
   },
   searchBox: {
-    backgroundColor: '#EFEFEF',
+    backgroundColor: '#D3D3D3',
   },
   heading_1: {
     marginTop: 20,

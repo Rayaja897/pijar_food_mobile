@@ -14,6 +14,48 @@ import recipeList from '../data/recipe.json';
 
 function HomeScreen({navigation}) {
   const [text, setText] = React.useState('');
+  const menuCategory = [
+    {
+      icons: (
+        <Image
+          source={require('../assets/icon-1.png')}
+          style={{width: 64, height: 64}}
+        />
+      ),
+      category: 'soup',
+      label: 'Soup',
+    },
+    {
+      icons: (
+        <Image
+          source={require('../assets/icon-2.png')}
+          style={{width: 64, height: 64}}
+        />
+      ),
+      category: 'chicken',
+      label: 'Chicken',
+    },
+    {
+      icons: (
+        <Image
+          source={require('../assets/icon-3.png')}
+          style={{width: 64, height: 64}}
+        />
+      ),
+      category: 'seafood',
+      label: 'Seafood',
+    },
+    {
+      icons: (
+        <Image
+          source={require('../assets/icon-4.png')}
+          style={{width: 64, height: 64}}
+        />
+      ),
+      category: 'dessert',
+      label: 'Dessert',
+    },
+  ];
 
   return (
     <SafeAreaView>
@@ -30,57 +72,25 @@ function HomeScreen({navigation}) {
 
         {/* start popular for you */}
         <Text style={styles.heading_1}>Popular for You</Text>
-
         <View
           style={{
             marginTop: 15,
             flexDirection: 'row',
             justifyContent: 'space-between',
           }}>
-          {[
-            {
-              icons: (
-                <Image
-                  source={require('../assets/icon-1.png')}
-                  style={{width: 64, height: 64}}
-                />
-              ),
-              label: 'Soup',
-            },
-            {
-              icons: (
-                <Image
-                  source={require('../assets/icon-2.png')}
-                  style={{width: 64, height: 64}}
-                />
-              ),
-              label: 'Chicken',
-            },
-            {
-              icons: (
-                <Image
-                  source={require('../assets/icon-3.png')}
-                  style={{width: 64, height: 64}}
-                />
-              ),
-              label: 'Seafood',
-            },
-            {
-              icons: (
-                <Image
-                  source={require('../assets/icon-4.png')}
-                  style={{width: 64, height: 64}}
-                />
-              ),
-              label: 'Dessert',
-            },
-          ].map((item, key) => (
-            <View key={key}>
-              {item.icons}
-              <Text style={{textAlign: 'center', fontWeight: 800}}>
-                {item.label}
-              </Text>
-            </View>
+          {menuCategory.map((item, key) => (
+            <TouchableWithoutFeedback
+              key={key}
+              onPress={() => {
+                navigation.navigate('Category', item);
+              }}>
+              <View>
+                {item.icons}
+                <Text style={{textAlign: 'center', fontWeight: 800}}>
+                  {item.label}
+                </Text>
+              </View>
+            </TouchableWithoutFeedback>
           ))}
         </View>
 
@@ -107,6 +117,7 @@ function HomeScreen({navigation}) {
                         width: 130,
                         padding: 10,
                         justifyContent: 'flex-end',
+                        objectFit: 'cover',
                       }}>
                       <Text
                         numberOfLines={1}
@@ -162,6 +173,7 @@ function HomeScreen({navigation}) {
                       height: 60,
                       resizeMode: 'cover',
                       borderRadius: 10,
+                      objectFit: 'cover',
                     }}
                     source={{uri: item.image}}
                   />

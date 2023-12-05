@@ -10,6 +10,7 @@
       "link": "https://www.youtube.com/watch?v=gLKGxJhI-Rs"
     },
     "made": "Andayani",
+    "Category": "soup",
     "rating": "4,9",
     "isPopular": true,
     "isNew": false
@@ -25,6 +26,7 @@
       "link": "https://www.youtube.com/watch?v=Hnlm2sWnOVo"
     },
     "made": "AmbarShaf",
+    "Category": "chicken",
     "rating": "5,0",
     "isPopular": true,
     "isNew": false
@@ -40,6 +42,7 @@
       "link": "https://www.youtube.com/watch?v=WQb9o9HEUmY"
     },
     "made": "VayKitchen",
+    "Category": "chicken",
     "rating": "4,9",
     "isPopular": true,
     "isNew": false
@@ -55,6 +58,7 @@
       "link": "https://www.youtube.com/watch?v=5LdEZqfUizM"
     },
     "made": "LiaAriani",
+    "Category": "",
     "rating": "4,8",
     "isPopular": true,
     "isNew": false
@@ -70,6 +74,7 @@
       "link": "https://www.youtube.com/watch?v=NC3Us6xhVcI"
     },
     "made": "DapurIma",
+    "Category": "",
     "rating": "4,6",
     "isPopular": true,
     "isNew": false
@@ -85,6 +90,7 @@
       "link": "https://www.youtube.com/watch?v=LCKaAB1lyK8"
     },
     "made": "ArumKusuma",
+    "Category": "",
     "rating": "4,9",
     "isPopular": false,
     "isNew": true
@@ -100,6 +106,7 @@
       "link": "https://www.youtube.com/watch?v=y8jC5L3Y5-c"
     },
     "made": "Anggita",
+    "Category": "seafood",
     "rating": "4,7",
     "isPopular": false,
     "isNew": true
@@ -115,6 +122,7 @@
       "link": "https://www.youtube.com/watch?v=hG8rtE2sxbI"
     },
     "made": "DesiDresviana",
+    "Category": "seafood",
     "rating": "4,8",
     "isPopular": false,
     "isNew": true
@@ -130,6 +138,7 @@
       "link": "https://www.youtube.com/watch?v=IND5YxIpSkE"
     },
     "made": "CeceromedKitchen",
+    "Category": "seafood",
     "rating": "4,9",
     "isPopular": false,
     "isNew": true
@@ -145,6 +154,7 @@
       "link": "https://www.youtube.com/watch?v=KlaF3RYjlzQ"
     },
     "made": "Naqiyyah",
+    "Category": "",
     "rating": "4,9",
     "isPopular": false,
     "isNew": true

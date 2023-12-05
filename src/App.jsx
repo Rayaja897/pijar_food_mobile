@@ -15,6 +15,7 @@ import HomeScreen from './screens/Home.Screen';
 import DetailRecipeScreen from './screens/DetailRecipe.screen';
 import LoginScreen from './screens/Login.screen';
 import RegisterScreen from './screens/Register.screen';
+import CategoryScreen from './screens/Category.screen';
 
 function App() {
   const Stack = createNativeStackNavigator();
@@ -41,6 +42,11 @@ function App() {
           <Stack.Screen
             name="Login"
             component={LoginScreen}
+            options={{headerShown: false}}
+          />
+          <Stack.Screen
+            name="Category"
+            component={CategoryScreen}
             options={{headerShown: false}}
           />
         </Stack.Navigator>

@@ -13,7 +13,7 @@ import {Searchbar, Text} from 'react-native-paper';
 import recipeList from '../data/recipe.json';
 
 function HomeScreen({navigation}) {
-  const [text, setText] = React.useState('');
+  const [text, setText] = React.useState(null);
   const menuCategory = [
     {
       icons: (
@@ -69,6 +69,43 @@ function HomeScreen({navigation}) {
           }}
           onChangeText={text => setText(text)}
         />
+        {text ? (
+          <View style={{backgroundColor:"#e5fcf5"}}>
+            {recipeList
+              .filter(item => item.title.toLowerCase().includes(text))
+              .map((item, key) => (
+                <View key={key} style={styles.resultContainer}>
+                  <Image
+                    style={{
+                      width: 60,
+                      height: 60,
+                      resizeMode: 'cover',
+                      borderRadius: 10,
+                      objectFit: 'cover',
+                    }}
+                    source={{uri: item.image}}
+                  />
+                  <View>
+                    <Text
+                      style={{color: '#666666', fontSize: 16, fontWeight: 800}}>
+                      {item.title}
+                    </Text>
+                    <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
+
+                    <View
+                      style={{
+                        flexDirection: 'row',
+                        alignItems: 'center',
+                        gap: 5,
+                      }}>
+                      <Image source={require('../assets/icon-star.png')} />
+                      <Text style={{color: '#B6B6B6'}}>{item.rating}</Text>
+                    </View>
+                  </View>
+                </View>
+              ))}
+          </View>
+        ) : null}
 
         {/* start popular for you */}
         <Text style={styles.heading_1}>Popular for You</Text>
@@ -216,6 +253,11 @@ const styles = StyleSheet.create({
     marginTop: 20,
     fontSize: 18,
     fontWeight: 800,
+  },
+  resultContainer: {
+    padding: 10,
+    flexDirection: 'row',
+    gap: 15,
   },
 });
 

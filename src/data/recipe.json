@@ -38,7 +38,7 @@
     "ingridients": "300 gr ayam fillet (bagian paha), 1 buah tomat merah kecil (potong2), 1 batang daun bawang (potong2), 1 lembar daun jeruk, 1 ruas jahe (geprek), 200 ml air, Secukupnya gula, garam, dan kaldu bubuk, Bumbu halus: 4 siung bawang merah, 2 siung bawang putih, 10 buah cabe merah (boleh campur rawit/sesuaikan selera), 1 butir kemiri (sangrai dulu), 1/4 sdt kunyit bubuk.",
     "taste": "delicious, savory, spicy",
     "youtube": {
-      "title": "RICA RICA AYAM FILLET SUPER ENAK~MENU SAHUR DAN BUKA PUASA",
+      "title": "RICA RICA AYAM FILLET SUPER ENAK~MENU..",
       "link": "https://www.youtube.com/watch?v=WQb9o9HEUmY"
     },
     "made": "VayKitchen",
@@ -58,7 +58,7 @@
       "link": "https://www.youtube.com/watch?v=5LdEZqfUizM"
     },
     "made": "LiaAriani",
-    "Category": "",
+    "Category": "seafood",
     "rating": "4,8",
     "isPopular": true,
     "isNew": false
@@ -70,11 +70,11 @@
     "ingridients": "1 liter teri halus, 3 genggam pete kupas (potong dua), 15 siung bawang merah, 5 siung bawang putih, 3 biji cabe besar (iris kasar), 15 biji cabe rawit, 7 biji cabe keriting (stok segitu aja, potong2), 2 biji cabe katokkon (iris2), 2 biji terasi, 1 sdm gula merah, 2 sdt gula pasir, Secukupnya garam dan penyedap rasa.",
     "taste": "delicious, savory",
     "youtube": {
-      "title": "SAMBEL TERI PETE, AWAS NASI BAKAL CEPAT HABIS.",
+      "title": "SAMBEL TERI PETE, AWAS NASI BAKAL CEPAT HA..",
       "link": "https://www.youtube.com/watch?v=NC3Us6xhVcI"
     },
     "made": "DapurIma",
-    "Category": "",
+    "Category": "seafood",
     "rating": "4,6",
     "isPopular": true,
     "isNew": false
@@ -118,7 +118,7 @@
     "ingridients": "500 gr kentang, 300 gr udang, 1 papan pete, 3 lembar daun salam, 1 batang sereh (memarkan), 1 sdt garam, 1 sdt kaldu bubuk, 1 sdt gula pasir, Secukupnya minyak goreng, Sedikit air matang. Bumbu Halus: 3 buah cabe merah besar, 5 buah cabe merah keriting, 5-10 buah rawit merah (sesuaikan), 5 siung bawang merah, 3 siung bawang putih, 1 buah tomat merah.",
     "taste": "delicious, spicy",
     "youtube": {
-      "title": "Sambal Goreng // Sambal Goreng Kentang Udang Pete // Resep Sambal Goreng //Cara Buat Sambal Goreng",
+      "title": "Sambal Goreng Kentang Udang Pete",
       "link": "https://www.youtube.com/watch?v=hG8rtE2sxbI"
     },
     "made": "DesiDresviana",
@@ -134,7 +134,7 @@
     "ingridients": "1/2 kg Udang kecil tanpa kepala, Bawang Bombay, Bumbu halus: 6 siung Bawang merah, 5 siung Bawang putih, Cabe rawit 7 biji (sesuai selera), Bumbu pelengkap: 3 Sdm Saos sambal, 2 Sdm Saos tomat, Saos tiram 1 bks (skip jika tidak suka), 1/2 Sdt Ladaku, Secukupnya Garam, Secukupnya Gula, Secukupnya Penyedap, Air 400ml (sesuaikan).",
     "taste": "delicious, spicy, sweet and sour",
     "youtube": {
-      "title": "Menu Resto Pindah Ke Rumah. Udang Asam Manis/Sweet and Sour Prawns.",
+      "title": "Menu Resto Pindah Ke Rumah. Udang Asam Man..",
       "link": "https://www.youtube.com/watch?v=IND5YxIpSkE"
     },
     "made": "CeceromedKitchen",
@@ -156,6 +156,198 @@
     "made": "Naqiyyah",
     "Category": "",
     "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/9427b9d4a257340e/1360x964cq70/sup-krim-jagung-ala-kfc-foto-resep-utama.webp",
+    "title": "Sup Krim Jagung ala KFC",
+    "slug": "sup-krim-jagung-ala-kfc",
+    "ingridients": "1 buah jagung manis, 1/2 batang wortel, 1 buah kentang, 3 buah sosis (bisa ganti suwiran ayam atau bakso), 5 buah bawang putih, 3 sdm margarin, 250 ml air, 100 ml susu UHT, 1 btng daun seledri, 1 sdt lada bubuk, 1 sdt garam, 1 sdt penyedap, 1 sdt kaldu ayam bubuk, 2 sdm tepung maizena.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "10 Menit Jadi! Resep SUP KRIM AYAM JAGUNG",
+      "link": "https://www.youtube.com/watch?v=ePdaj_kYBoA"
+    },
+    "made": "Mutiara Juwita",
+    "Category": "soup",
+    "rating": "4,7",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/0d1dbca21fb95278/1360x964cq70/sayur-sop-bening-segar-foto-resep-utama.webp",
+    "title": "Sayur Sop Bening Segar",
+    "slug": "sayur-sop-bening-segar",
+    "ingridients": "1 buah kentang, 2 batang wortel, 2 batang daun bawang, 1 batang daun seledri, 100 gr balungan ayam untuk kaldu (boleh skip), 2 buah sosis ayam (boleh skip), 3 siung bawang putih, 1/2 saset lada bubuk, 1/2 sdt kaldu jamur, 1/2 sdt gula pasir, 1 liter air matang.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "Resep Cara Membuat Sayur Sop Bening",
+      "link": "https://www.youtube.com/watch?v=YM3_CeX62fY"
+    },
+    "made": "Liawati Iskandar",
+    "Category": "soup",
+    "rating": "4,9",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/a4beb4d1ec7b6e6e/1360x964cq70/sayur-sop-ayam-foto-resep-utama.webp",
+    "title": "Sayur Sop Ayam",
+    "slug": "sayur-sop-ayam",
+    "ingridients": "1 buah kentang, 2 batang wortel, 2 batang daun bawang, 1 batang daun seledri, 100 gr balungan ayam untuk kaldu (boleh skip), 2 buah sosis ayam (boleh skip), 3 siung bawang putih, 1/2 saset lada bubuk, 1/2 sdt kaldu jamur, 1/2 sdt gula pasir, 1 liter air matang.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "SOP AYAM SEDERHANA - SIMPLE ENAK",
+      "link": "https://www.youtube.com/watch?v=5VI2DRgsXdw"
+    },
+    "made": "Olivia Shelvy",
+    "Category": "soup",
+    "rating": "4,8",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/7db2692c7352abe3/1360x964cq70/sup-kacang-merah-foto-resep-utama.webp",
+    "title": "Sup Kacang Merah",
+    "slug": "sup-kacang-merah",
+    "ingridients": "1/2 kg daging direbus empuk, 1/4 kg kacang merah, 7 siung bawang putih geprek, 1/2 sdt lada halus, 1 sdt kaldu jamur, 1 sdm garam, 1 liter air, 1 buah pala.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "Resep Sup Kacang Merah Tanpa Daging",
+      "link": "https://www.youtube.com/watch?v=h1c7Bt3kn3Y"
+    },
+    "made": "Soren Aaron",
+    "Category": "soup",
+    "rating": "4,8",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/53f81c22ee54fbe2/1360x964cq70/ayam-kentucky-crispy-foto-resep-utama.webp",
+    "title": "Ayam kentucky crispy",
+    "slug": "ayam-kentucky-crispy",
+    "ingridients": "1/2 kg ayam, 1 bks tepung sajiku, 1/4 kg tepung terigu, 1 sachet royko ayam, Secukupnya Minyak goreng, Air dingin. Bumbu marinasi ayam: 2 siung bawang putih, Secukupnya garam, Secukupnya lada bubuk.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "RESEP SIMPLE BIKIN AYAM KENTUCKY ‼️",
+      "link": "https://www.youtube.com/watch?v=h96RK21ovDU"
+    },
+    "made": "Lia Andani",
+    "Category": "chicken",
+    "rating": "4,8",
+    "isPopular": true,
+    "isNew": false
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/27a7124dd1161b20/1360x964cq70/opor-ayam-bumbu-kuning-foto-resep-utama.webp",
+    "title": "Opor Ayam bumbu kuning",
+    "slug": "opor-ayam-bumbu-kuning",
+    "ingridients": "200 gr Paha dan Dada Ayam, 25 ml Minyak Goreng, 1 lembar Daun Salam, 1 Batang Serai (memarkan), 1 cm lengkuas (memarkan), 200 ml Air, 1/4 sdt Garam, 1/4 sdt Gula Pasir. Bumbu Halus: 15 gr Bawang Merah, 7 gr Bawang Putih, 1/8 sdt Ketumbar, 1/8 sdt Jinten, 1/8 sdt Merica, 1/2 gr Jahe, 1/2 ruas kunyit.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "Resep opor ayam",
+      "link": "https://www.youtube.com/watch?v=uZvWZzy8LyY"
+    },
+    "made": " Elvira Agustina",
+    "Category": "chicken",
+    "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/432e7fec8ae039c7/1360x964cq70/semur-ayam-kecap-berempah-foto-resep-utama.webp",
+    "title": "Semur Ayam Kecap Berempah",
+    "slug": "semur-ayam-kecap-berempah",
+    "ingridients": "1 ekor Ayam ukuran 1kg. Bumbu Halus: 5 siung Bawang Merah, 3 siung Bawang Putih, 1/2 ruas Jahe, 1/2 sdt Lada, 1 sdt Ketumbar Bubuk, 2 buah Kemiri sangrai, 1/2 ruas Kunyit. Bumbu pelengkap: 2 batang Sereh, 2 lembar Daun Salam, 3 lembar Daun Jeruk, 1/4 buah Pala, 2 buah Cengkeh, 1 ruas Lengkuas, Secukupnya Kecap Manis, 0,5 cm Kayu Manis, Secukupnya Garam dan penyedap rasa, Secukupnya Air.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "SEMUR AYAM, BERKECAP BEREMPAH",
+      "link": "https://www.youtube.com/watch?v=j2ESIrSEWK4"
+    },
+    "made": " Dde Winda",
+    "Category": "chicken",
+    "rating": "4,7",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/5f7321281b45f36d/1360x964cq70/es-buah-jelly-rasa-mangga-foto-resep-utama.webp",
+    "title": "Es buah jelly rasa mangga",
+    "slug": "es-buah-jelly-rasa-mangga",
+    "ingridients": "1 bungkus jelly rasa strawberry, 2 sendok makan gula, 3 gelas air, Potongan mangga, Potongan buah nangka masak, 1 gelas air, 1 bungkus pop ice, 1 saset susu putih.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "ES MANGGA JELLY SUSU",
+      "link": "https://www.youtube.com/watch?v=RWtIR-jX-dg"
+    },
+    "made": " Mardiana",
+    "Category": "dessert",
+    "rating": "4,9",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/f30a6cba970ce016/1360x964cq70/7-fruit-salad-no-mayo-foto-resep-utama.webp",
+    "title": "Fruit Salad no mayo",
+    "slug": "fruit-salad-no-mayo",
+    "ingridients": "200 gr Semangka merah, 100 gr Buah naga merah, 100 gr Strawberry, 1 buah Apel, 1 buah Alpukat, 200 gr yogurt plain, 50-100 gr raw honey.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "SALAD BUAH TANPA MAYO | LEBIH CREAMY",
+      "link": "https://www.youtube.com/watch?v=aQg45Bxu7hI"
+    },
+    "made": " Verena Lita",
+    "Category": "dessert",
+    "rating": "4,8",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/5bf6d9056b13b22b/1360x964cq70/puding-coklat-with-chesee-cream-lumer-di-mulut-foto-resep-utama.webp",
+    "title": "Puding coklat with chesee cream",
+    "slug": "puding-coklat-with-chesee-cream",
+    "ingridients": "1 bungkus puding nutrijell rasa coklat, 750 ml santan, 6 sendok makan SKM, gula secukupnya/sesuai selera, 1 sendok teh pasta coklat/1 bungkus SKM coklat, 1 sendok teh garam, 2 sendok makan maizena (me:meizena ku). Bahan cheese cream: 250 ml susu UHT, 150 gr keju cheddar parut, 7/8 sendok makan gula.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "Milo Regal dessert cup. Puding Milo Regal..",
+      "link": "https://www.youtube.com/watch?v=w9m9Lbg9yXs"
+    },
+    "made": "Dapoer Cantik",
+    "Category": "dessert",
+    "rating": "4,7",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/6d0822c6c7b69357/1360x964cq70/es-balon-alpukat-pecah-di-mulut-foto-resep-utama.webp",
+    "title": "Es Balon Alpukat Pecah di Mulut",
+    "slug": "es-balon-alpukat-pecah-di-mulut",
+    "ingridients": "2 buah alpukat, 1 bungkus santan kara, 2 sachet kental manis putih, 8 sendok makan gula pasir (sesuai selera), 2 sendok makan tepung maizena, 1 bungkus vanili, Sejumput garam, 1 liter air.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "ES MAMBO ALPUKAT || ES LILIN ALPUKAT",
+      "link": "https://www.youtube.com/watch?v=TI09hOkfig0"
+    },
+    "made": "Rina Sri Maryana",
+    "Category": "dessert",
+    "rating": "4,7",
+    "isPopular": false,
+    "isNew": true
+  },
+  {
+    "image": "https://img-global.cpcdn.com/recipes/c99cdc69e1ca9906/1360x964cq70/es-mambo-pelangi-lumer-di-mulut-foto-resep-utama.webp",
+    "title": "Es mambo pelangi lumer di mulut",
+    "slug": "es-mambo-pelangi-lumer-di-mulut",
+    "ingridients": "1 bungkus agar nutrijel ukuran besar rasa plain, 1 kg gula putih, 250 gr maizena, 5 liter air (4 liter air mentah + 1 liter air masak), sesuai selera pewarna makanan.",
+    "taste": "delicious",
+    "youtube": {
+      "title": "IDE JUALAN, ES MAMBO JELLY PELANGI",
+      "link": "https://www.youtube.com/watch?v=TI09hOkfig0"
+    },
+    "made": "Lia Yunengsih",
+    "Category": "dessert",
+    "rating": "4,8",
     "isPopular": false,
     "isNew": true
   }

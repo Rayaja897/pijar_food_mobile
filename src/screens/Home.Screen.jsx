@@ -70,7 +70,7 @@ function HomeScreen({navigation}) {
           onChangeText={text => setText(text)}
         />
         {text ? (
-          <View style={{backgroundColor:"#e5fcf5"}}>
+          <View style={{backgroundColor: '#e5fcf5'}}>
             {recipeList
               .filter(item => item.title.toLowerCase().includes(text))
               .map((item, key) => (
@@ -140,6 +140,7 @@ function HomeScreen({navigation}) {
           <View style={{flexDirection: 'row', gap: 20}}>
             {recipeList
               ?.filter(item => item.isNew)
+              .slice(0, 5)
               .map((item, key) => (
                 <TouchableWithoutFeedback
                   key={key}
@@ -199,6 +200,7 @@ function HomeScreen({navigation}) {
         <View style={{paddingBottom: 25}}>
           {recipeList
             ?.filter(item => item.isPopular)
+            .slice(0, 8)
             .map((item, key) => (
               <TouchableWithoutFeedback
                 key={key}

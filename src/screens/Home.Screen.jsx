@@ -82,9 +82,11 @@ function HomeScreen({navigation}) {
             style={{height: 70, width: 70}}></Image>
         </View>
         <View style={{position: 'absolute', right: 20, top: 15}}>
-          <Image
-            source={require('../assets/mama-profile.png')}
-            style={{height: 30, width: 30}}></Image>
+          <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile')}>
+            <Image
+              source={require('../assets/mama-profile.png')}
+              style={{height: 30, width: 30}}></Image>
+          </TouchableWithoutFeedback>
         </View>
       </View>
       <ScrollView style={styles.root}>

@@ -235,7 +235,10 @@ function HomeScreen({navigation}) {
         {/* start of popular recipes */}
         <Text style={styles.heading_1}>Popular Recipes</Text>
 
-        <View style={{paddingBottom: 25}}>
+        <View>
+          
+        </View>
+        <View style={{paddingBottom: 90}}>
           {recipeList
             ?.filter(item => item.isPopular)
             .slice(0, 8)

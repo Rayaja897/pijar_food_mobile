@@ -59,6 +59,34 @@ function HomeScreen({navigation}) {
 
   return (
     <SafeAreaView>
+      <View
+        style={{
+          height: 65,
+          backgroundColor: '#EFC81A',
+          display: 'flex',
+          justifyContent: 'space-between',
+          alignItems: 'center',
+          position: 'relative',
+        }}>
+        <View style={{position: 'absolute', left: 20, top: 15}}>
+          <TouchableWithoutFeedback
+            onPress={() => navigation.navigate('Hamburger')}>
+            <Image
+              source={require('../assets/hamburger-menu.png')}
+              style={{height: 30, width: 30}}></Image>
+          </TouchableWithoutFeedback>
+        </View>
+        <View>
+          <Image
+            source={require('../assets/mama-logo-removebg.png')}
+            style={{height: 70, width: 70}}></Image>
+        </View>
+        <View style={{position: 'absolute', right: 20, top: 15}}>
+          <Image
+            source={require('../assets/mama-profile.png')}
+            style={{height: 30, width: 30}}></Image>
+        </View>
+      </View>
       <ScrollView style={styles.root}>
         <Searchbar
           placeholder="Search Pasta, Bread, etc"
@@ -74,35 +102,43 @@ function HomeScreen({navigation}) {
             {recipeList
               .filter(item => item.title.toLowerCase().includes(text))
               .map((item, key) => (
-                <View key={key} style={styles.resultContainer}>
-                  <Image
-                    style={{
-                      width: 60,
-                      height: 60,
-                      resizeMode: 'cover',
-                      borderRadius: 10,
-                      objectFit: 'cover',
-                    }}
-                    source={{uri: item.image}}
-                  />
-                  <View>
-                    <Text
-                      style={{color: '#666666', fontSize: 16, fontWeight: 800}}>
-                      {item.title}
-                    </Text>
-                    <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
-
-                    <View
+                <TouchableWithoutFeedback
+                  key={key}
+                  onPress={() => navigation.navigate('Detail Recipe', item)}>
+                  <View style={styles.resultContainer}>
+                    <Image
                       style={{
-                        flexDirection: 'row',
-                        alignItems: 'center',
-                        gap: 5,
-                      }}>
-                      <Image source={require('../assets/icon-star.png')} />
-                      <Text style={{color: '#B6B6B6'}}>{item.rating}</Text>
+                        width: 60,
+                        height: 60,
+                        resizeMode: 'cover',
+                        borderRadius: 10,
+                        objectFit: 'cover',
+                      }}
+                      source={{uri: item.image}}
+                    />
+                    <View>
+                      <Text
+                        style={{
+                          color: '#666666',
+                          fontSize: 16,
+                          fontWeight: 800,
+                        }}>
+                        {item.title}
+                      </Text>
+                      <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
+
+                      <View
+                        style={{
+                          flexDirection: 'row',
+                          alignItems: 'center',
+                          gap: 5,
+                        }}>
+                        <Image source={require('../assets/icon-star.png')} />
+                        <Text style={{color: '#B6B6B6'}}>{item.rating}</Text>
+                      </View>
                     </View>
                   </View>
-                </View>
+                </TouchableWithoutFeedback>
               ))}
           </View>
         ) : null}

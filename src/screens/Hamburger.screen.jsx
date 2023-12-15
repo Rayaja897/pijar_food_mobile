@@ -6,19 +6,40 @@ import {
   View,
   TouchableWithoutFeedback,
 } from 'react-native';
-import {Text, Button} from 'react-native-paper';
+import {Text, Button, Snackbar} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
 function HamburgerScreen({navigation}) {
+  const [visible, setVisible] = React.useState(false);
+  const [snackBg, setSnackBg] = React.useState('');
+  const [messageSnack, setMessageSnack] = React.useState('');
+  const onDismissSnackBar = () => setVisible(false);
+
   const handleLogout = async () => {
     await AsyncStorage.removeItem('users');
+    setVisible(true);
+    setMessageSnack('LogOut successfully');
+    setSnackBg('#75b798');
     setTimeout(() => {
       navigation.navigate('Home');
     }, 2000);
   };
   return (
     <SafeAreaView style={styles.root}>
+      <Snackbar
+        wrapperStyle={{top: 0, position: 'absolute', zIndex: 999999}}
+        style={{backgroundColor: snackBg}}
+        visible={visible}
+        onDismiss={onDismissSnackBar}
+        action={{
+          label: 'X',
+          onPress: () => {
+            onDismissSnackBar();
+          },
+        }}>
+        <Text style={{color: 'white'}}>{messageSnack}</Text>
+      </Snackbar>
       <TouchableWithoutFeedback onPress={() => navigation.goBack()}>
         <View style={{flexDirection: 'row', alignItems: 'center', gap: 5}}>
           <Icon name="angle-left" size={25} color="#000" />

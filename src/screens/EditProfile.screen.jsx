@@ -13,7 +13,7 @@ function EditProfileScreen({navigation}) {
   const handleUpdate = () => {
     firestore()
       .collection('users')
-      .doc(uid)
+      .doc(auth().currentUser.uid)
       .update({
         fullname: fullname,
         phone: phoneNumber,

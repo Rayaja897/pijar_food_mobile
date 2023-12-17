@@ -30,7 +30,8 @@ function ProfileScreen({navigation}) {
               <Text style={{color: '#000', fontSize: 15}}>Kembali</Text>
             </View>
           </TouchableWithoutFeedback>
-          <TouchableWithoutFeedback onPress={() => {
+          <TouchableWithoutFeedback
+            onPress={() => {
               navigation.navigate('EditProfile');
             }}>
             <View
@@ -138,7 +139,7 @@ function ProfileScreen({navigation}) {
             </View>
             {/* body view */}
             {bodyView === 'my recipe' ? (
-              <View style={{paddingBottom: 25}}>
+              <View style={{flexDirection: 'row', gap: 10}}>
                 {recipeList
                   ?.filter(item => item.isNew)
                   .slice(0, 2)
@@ -148,34 +149,30 @@ function ProfileScreen({navigation}) {
                       onPress={() =>
                         navigation.navigate('Detail Recipe', item)
                       }>
-                      <View
-                        style={{
-                          flexDirection: 'row',
-                          gap: 15,
-                          marginTop: 15,
-                        }}>
-                        <Image
-                          style={{
-                            width: 60,
-                            height: 60,
-                            resizeMode: 'cover',
-                            borderRadius: 10,
-                            objectFit: 'cover',
-                          }}
+                      <View style={{borderRadius: 10, marginTop: 15, padding:5}}>
+                        <ImageBackground
                           source={{uri: item.image}}
-                        />
-
-                        <View>
+                          resizeMode="cover"
+                          imageStyle={{borderRadius: 10}}
+                          style={{
+                            height: 130,
+                            width: 160,
+                            padding: 10,
+                            justifyContent: 'flex-end',
+                            objectFit: 'cover',
+                          }}>
                           <Text
+                            numberOfLines={1}
                             style={{
-                              color: '#666666',
-                              fontSize: 16,
-                              fontWeight: 800,
+                              color: '#fff',
+                              fontSize: 15,
+                              fontWeight: 500,
+                              textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                              textShadowOffset: {width: -1, height: 1},
+                              textShadowRadius: 10,
                             }}>
                             {item.title}
                           </Text>
-                          <Text style={{color: '#B6B6B6'}}>{item.taste}</Text>
-
                           <View
                             style={{
                               flexDirection: 'row',
@@ -185,11 +182,17 @@ function ProfileScreen({navigation}) {
                             <Image
                               source={require('../assets/icon-star.png')}
                             />
-                            <Text style={{color: '#B6B6B6'}}>
+                            <Text
+                              style={{
+                                color: '#fff',
+                                textShadowColor: 'rgba(0, 0, 0, 0.75)',
+                                textShadowOffset: {width: -1, height: 1},
+                                textShadowRadius: 10,
+                              }}>
                               {item.rating}
                             </Text>
                           </View>
-                        </View>
+                        </ImageBackground>
                       </View>
                     </TouchableWithoutFeedback>
                   ))}

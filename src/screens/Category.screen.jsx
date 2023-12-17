@@ -7,10 +7,14 @@ import {
   Image,
   TouchableWithoutFeedback,
   ScrollView,
+  LogBox,
 } from 'react-native';
 import {Text} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import recipeList from '../data/recipe.json';
+
+// menyembunyikan warning
+LogBox.ignoreAllLogs();
 
 function CategoryScreen({navigation, route}) {
   const {category} = route.params;

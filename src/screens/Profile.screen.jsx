@@ -4,10 +4,9 @@ import {
   View,
   ImageBackground,
   TouchableWithoutFeedback,
-  ScrollView,
   Image,
 } from 'react-native';
-import {Text, Button, TextInput, Snackbar} from 'react-native-paper';
+import {Text, Button} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import recipeList from '../data/recipe.json';
 
@@ -31,6 +30,20 @@ function ProfileScreen({navigation}) {
               <Text style={{color: '#000', fontSize: 15}}>Kembali</Text>
             </View>
           </TouchableWithoutFeedback>
+          <TouchableWithoutFeedback onPress={() => {
+              navigation.navigate('EditProfile');
+            }}>
+            <View
+              style={{
+                flexDirection: 'row',
+                position: 'absolute',
+                paddingTop: 190,
+                marginLeft: 240,
+                gap: 5,
+              }}>
+              <Icon name="edit" size={25} color="#000" />
+            </View>
+          </TouchableWithoutFeedback>
           <View
             style={{
               position: 'absolute',
@@ -46,20 +59,34 @@ function ProfileScreen({navigation}) {
                 bottom: 10,
                 backgroundColor: '#EFC81A',
               }}></Image>
-            <Text
+
+            <View
               style={{
-                textAlign: 'center',
+                flexDirection: 'row',
                 marginTop: 5,
-                fontSize: 20,
-                color: 'black',
+                marginLeft: -15,
+                alignItems: 'center',
+                gap: 10,
               }}>
-              Rayhan ilham
-            </Text>
+              <Icon name="user" size={25} color="#000" />
+              <Text style={{fontSize: 20}}>Rayhan ilham</Text>
+            </View>
+            <View
+              style={{
+                flexDirection: 'row',
+                marginTop: 5,
+                marginLeft: -15,
+                alignItems: 'center',
+                gap: 10,
+              }}>
+              <Icon name="phone" size={25} color="#000" />
+              <Text style={{fontSize: 20}}>08978574952</Text>
+            </View>
           </View>
           <View
             style={{
               position: 'absolute',
-              paddingTop: 260,
+              paddingTop: 280,
               marginLeft: 0,
             }}>
             <View style={{flexDirection: 'row'}}>

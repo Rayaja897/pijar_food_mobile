@@ -1,4 +1,5 @@
 import React from 'react';
+import {useSelector} from 'react-redux';
 
 import {
   SafeAreaView,
@@ -14,6 +15,11 @@ import recipeList from '../data/recipe.json';
 
 function HomeScreen({navigation}) {
   const [text, setText] = React.useState(null);
+  const {users} = useSelector(state => state.auth);
+  React.useEffect(() => {
+    console.log(users);
+  }, []);
+
   const menuCategory = [
     {
       icons: (
@@ -82,7 +88,8 @@ function HomeScreen({navigation}) {
             style={{height: 70, width: 70}}></Image>
         </View>
         <View style={{position: 'absolute', right: 20, top: 15}}>
-          <TouchableWithoutFeedback onPress={() => navigation.navigate('Profile')}>
+          <TouchableWithoutFeedback
+            onPress={() => navigation.navigate('Profile')}>
             <Image
               source={require('../assets/mama-profile.png')}
               style={{height: 30, width: 30}}></Image>
@@ -235,9 +242,7 @@ function HomeScreen({navigation}) {
         {/* start of popular recipes */}
         <Text style={styles.heading_1}>Popular Recipes</Text>
 
-        <View>
-          
-        </View>
+        <View></View>
         <View style={{paddingBottom: 90}}>
           {recipeList
             ?.filter(item => item.isPopular)

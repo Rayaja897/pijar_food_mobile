@@ -9,8 +9,10 @@ import {
 import {Text, Button} from 'react-native-paper';
 import Icon from 'react-native-vector-icons/dist/FontAwesome';
 import recipeList from '../data/recipe.json';
+import {useSelector} from 'react-redux';
 
 function ProfileScreen({navigation}) {
+  const {users} = useSelector(state => state.auth);
   const [bodyView, setBodyView] = React.useState('my recipe');
   return (
     <SafeAreaView>
@@ -66,22 +68,22 @@ function ProfileScreen({navigation}) {
                 flexDirection: 'row',
                 marginTop: 5,
                 marginLeft: -15,
-                alignItems: 'center',
+                alignSelf:'center',
                 gap: 10,
               }}>
               <Icon name="user" size={25} color="#000" />
-              <Text style={{fontSize: 20}}>Rayhan ilham</Text>
+              <Text style={{fontSize: 20}}>{users.fullname}</Text>
             </View>
             <View
               style={{
                 flexDirection: 'row',
                 marginTop: 5,
                 marginLeft: -15,
-                alignItems: 'center',
+                alignSelf:'center',
                 gap: 10,
               }}>
               <Icon name="phone" size={25} color="#000" />
-              <Text style={{fontSize: 20}}>08978574952</Text>
+              <Text style={{fontSize: 20}}>{users.phone}</Text>
             </View>
           </View>
           <View
@@ -139,17 +141,18 @@ function ProfileScreen({navigation}) {
             </View>
             {/* body view */}
             {bodyView === 'my recipe' ? (
-              <View style={{flexDirection: 'row', gap: 10}}>
+              <View style={{flexDirection: 'row', flexWrap: 'wrap', gap: 10}}>
                 {recipeList
                   ?.filter(item => item.isNew)
-                  .slice(0, 2)
+                  .slice(0, 3)
                   .map((item, key) => (
                     <TouchableWithoutFeedback
                       key={key}
                       onPress={() =>
                         navigation.navigate('Detail Recipe', item)
                       }>
-                      <View style={{borderRadius: 10, marginTop: 15, padding:5}}>
+                      <View
+                        style={{borderRadius: 10, marginTop: 15, padding: 5}}>
                         <ImageBackground
                           source={{uri: item.image}}
                           resizeMode="cover"

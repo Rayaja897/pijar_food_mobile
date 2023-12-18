@@ -13,7 +13,7 @@ function EditProfileScreen({navigation}) {
   const handleUpdate = () => {
     firestore()
       .collection('users')
-      .doc(auth().currentUser.uid)
+      .doc("JVcs1gEbhsRyNhD6BU1t")
       .update({
         fullname: fullname,
         phone: phoneNumber,
@@ -25,7 +25,7 @@ function EditProfileScreen({navigation}) {
   return (
     <>
       <View style={style.container}>
-        <Pressable onPress={() => navigation.navigate('Profile')}>
+        <Pressable onPress={() => navigation.navigate('Home')}>
           <View style={style.profileNav}>
             <Antdesign name="arrowleft" size={30} color="#000" />
             <Text

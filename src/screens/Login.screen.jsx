@@ -2,7 +2,8 @@ import React from 'react';
 import {Image, ScrollView, View, TouchableWithoutFeedback} from 'react-native';
 import {Text, TextInput, Button, Snackbar} from 'react-native-paper';
 import firestore from '@react-native-firebase/firestore';
-import AsyncStorage from '@react-native-async-storage/async-storage';
+import {useDispatch, useSelector} from 'react-redux';
+import * as auth from '../redux/slices/auth';
 
 function LoginScreen({navigation}) {
   const [email, setEmail] = React.useState('');
@@ -10,6 +11,9 @@ function LoginScreen({navigation}) {
   const [visible, setVisible] = React.useState(false);
   const [snackBg, setSnackBg] = React.useState('');
   const [messageSnack, setMessageSnack] = React.useState('');
+
+  const {users} = useSelector(state => state.auth);
+  const dispatch = useDispatch();
 
   const onDismissSnackBar = () => setVisible(false);
 
@@ -29,17 +33,21 @@ function LoginScreen({navigation}) {
           setSnackBg('#842029');
         } else {
           if (tempData[0]?._data?.password === password) {
+            dispatch(auth.setUsers(tempData[0]._data))
             setVisible(true);
             setMessageSnack('Login Success');
             setSnackBg('#75b798');
+            
 
-            await AsyncStorage.setItem(
-              'users',
-              JSON.stringify(tempData[0]._data),
-            );
-            setTimeout(() => {
+            // console.log(tempData[0]._data);
+
+            // await AsyncStorage.setItem(
+            //   'users',
+            //   JSON.stringify(tempData[0]._data),
+            // );
+            // setTimeout(() => {
               navigation.navigate('Home');
-            }, 2000);
+            // }, 2000);
           } else {
             setVisible(true);
             setMessageSnack('Password incorrect');

@@ -59,7 +59,7 @@ Before you install this project on your Mobile Phone. You need:
 
 Click this button for download the complete built project APK:
 
-[![download](https://img.shields.io/badge/Download-32CD32)](https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0)
+[![download](https://img.shields.io/badge/Download-32CD32)](https://github.com/Rayaja897/pijar_food_mobile/releases/tag/v1.0.0)
 
 or
 
@@ -90,21 +90,21 @@ password: 123
 
 |                        Splash Screen                         |                    Login Screen                     |                      Register Screen                      |                      Home Screen                      |
 | :----------------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------: | :---------------------------------------------------: |
-| ![Splash Screen](https://i.ibb.co/Z8dcz7z/splash-screen.png) | ![Login Screen](https://ibb.co/K7K8hCt) | ![Register Screen](https://i.ibb.co/S33F0NG/register.png) | ![Home Screen](https://ibb.co/wMJGRqd) |
+| ![Splash Screen](https://i.ibb.co/Z8dcz7z/splash-screen.png) | ![Login Screen](https://i.ibb.co/vmXMq2N/Whats-App-Image-2023-12-21-at-01-19-33-2.jpg) | ![Register Screen](https://i.ibb.co/S33F0NG/register.png) | ![Home Screen](https://i.ibb.co/LnQj8y0/Whats-App-Image-2023-12-21-at-01-19-33.jpg) |
 
 |                        Search Recipe                         |                              Detail Recipe                               |                           Detail Recipe                            |                            Detail Recipe Comment                             |
 | :----------------------------------------------------------: | :----------------------------------------------------------------------: | :----------------------------------------------------------------: | :--------------------------------------------------------------------------: |
-| ![Search Recipe](https://ibb.co/TkdSSWj) | ![Detail Recipe](https://ibb.co/MRt7ZQk) | ![Detail Recipe](https://ibb.co/kQrCVq0) | ![Detail Recipe Comment](https://ibb.co/f92sjYq) |
+| ![Search Recipe](https://i.ibb.co/6mLxxX9/Whats-App-Image-2023-12-21-at-01-30-43.jpg) | ![Detail Recipe](https://i.ibb.co/wKP4Bjh/Whats-App-Image-2023-12-21-at-01-19-35.jpg) | ![Detail Recipe](https://i.ibb.co/yWMjmg5/Whats-App-Image-2023-12-21-at-01-19-34-3.jpg) | ![Detail Recipe Comment](https://i.ibb.co/MfsmFDZ/Whats-App-Image-2023-12-21-at-01-19-34-2.jpg) |
 
-|                        Hamburger Menu (Not Login)                        |                        User Profile                        |                        Edit Profile                        |
+|                        Hamburger Menu                        |                        User Profile                        |                        Edit Profile                        |
 | :----------------------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
-| ![Hamburger Menu](https://ibb.co/HpYPC7q) | ![User Profile](https://ibb.co/fFzk66L) | ![Edit Profile](https://ibb.co/S5PsXtr) |
+| ![Hamburger Menu](https://i.ibb.co/R4P6N2c/Whats-App-Image-2023-12-21-at-01-19-46.jpg) | ![User Profile](https://i.ibb.co/ZXpB447/Whats-App-Image-2023-12-21-at-01-19-33-3.jpg) | ![Edit Profile](https://i.ibb.co/q7dyMN5/Whats-App-Image-2023-12-21-at-01-19-34.jpg) |
 
 ## Related Project
 
 You can visit my github link related to the project:
 
-🚀 **[Download Mama Recipe Apps](https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0)**
+🚀 **[Download Mama Recipe Apps](https://github.com/Rayaja897/pijar_food_mobile/releases/tag/v1.0.0)**
 
 ## Contact
 

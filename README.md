@@ -1,100 +1,127 @@
 # Mama Recipe Mobile
 
-Selamat datang di Mama Recipe, aplikasi revolusioner yang akan membawa pengalaman memasak dan menikmati makanan dan minuman Anda ke level berikutnya! Dengan antarmuka yang intuitif dan kreatif, Mama Recipe adalah sahabat setia Anda dalam memasak, memberikan inspirasi tak terbatas untuk menu makanan dan minuman yang lezat.
+<div align="center">
+<a href="https://github.com/yongkisatrias/mama_recipe_mobile">
+    <img src="https://i.ibb.co/bdjnQ0H/mama-recipe-icon.png" alt="Logo" width="150" height="170">
+</a>
+</div>
 
-Aplikasi ini menawarkan lebih dari sekadar kumpulan resep biasa. Dengan fitur pencarian canggih, Anda dapat menemukan ide-ide segar untuk setiap kesempatan, mulai dari resep sarapan yang menyegarkan hingga hidangan makan malam yang memukau. Berbagai kategori seperti "Klasik dengan Sentuhan Modern", "Petualangan Rasa", dan "Makanan Sehat Tanpa Kompromi" akan memandu Anda dalam mengeksplorasi ragam kuliner yang tak terbatas.
+## Table of Contents
 
-Ingin membuat masakan spesial dengan bahan yang ada di lemari dapur Anda? Mama Recipe memiliki fitur "Buat Sendiri" yang memungkinkan Anda menciptakan resep pribadi dan menyimpannya untuk digunakan kapan saja. Bagikan kreasi kuliner unik Anda dengan komunitas Mama Recipe dan dapatkan umpan balik positif dari sesama pecinta masakan.
+- [About Project](#about-project)
+- [Requirement](#requirement)
+- [Built With](#built-with)
+- [Installation](#installation)
+- [Demo](#demo)
+- [Related Project](#related-project)
+- [Contact](#contact)
 
-# Fitur Utama
-1. Pencarian Makanan: Temukan resep dan informasi terperinci tentang makanan favorit Anda.
-2. Kategori Makanan: Jelajahi makanan berdasarkan kategori, seperti makanan penutup, hidangan utama, dan lainnya.
-3. Komentar: Berikan pendapat anda mengenai resep anda senangi.
-4. Resep Langkah demi Langkah: Ikuti Video Tutorial yang tersedia pada halaman setiap resep yang ingin anda buat.
+## About Project
 
-# Teknologi yang Digunakan
-1. React: Library JavaScript untuk membangun antarmuka pengguna yang responsif.
-2. React Router: Menangani navigasi di aplikasi single-page.
-3. Redux: Manajemen keadaan untuk memudahkan pengelolaan data aplikasi.
-4. Firebase: Untuk penyimpanan data favorit pengguna.
-5. Axios: Untuk melakukan permintaan HTTP ke server backend.
+Mama Recipe: Your Culinary Oasis
 
-# Cara Menggunakan Aplikasi
+Introducing Mama Recipe, your ultimate culinary companion designed to elevate your cooking experience. Whether you're a passionate home chef or an aspiring foodie, our application is crafted just for you. With Mama Recipe, explore a world of culinary wonders right at your fingertips.
 
-# Getting Started
+Key Features:
 
->**Note**: Make sure you have completed the [React Native - Environment Setup](https://reactnative.dev/docs/environment-setup) instructions till "Creating a new application" step, before proceeding.
+🌐 Recipe Hub: Share your favorite recipes with a vibrant global cooking community. Connect with fellow food enthusiasts, swap ideas, and showcase your culinary flair. Mama Recipe is your platform to share and savor the diversity of home-cooked delights.
 
-## Step 1: Start the Metro Server
+📖 Culinary Library: Immerse yourself in an extensive library of recipes, ranging from timeless classics to cutting-edge creations. Never be short of inspiration for your next gastronomic adventure. Mama Recipe is your culinary encyclopedia.
 
-First, you will need to start **Metro**, the JavaScript _bundler_ that ships _with_ React Native.
+🔎 Smart Search: Effortlessly find recipes that match your ingredients or dietary preferences. Bid farewell to the guesswork in your kitchen – Mama Recipe ensures you discover the perfect recipe for any occasion.
 
-To start Metro, run the following command from the _root_ of your React Native project:
+📱 Mobile Magic: Take your recipes wherever life leads you. Our user-friendly mobile app ensures you have instant access to your cooking inspirations anytime, anywhere. Your kitchen is no longer confined to the walls of your home.
 
-```bash
-# using npm
-npm start
+👨‍🍳 Masters' Insights: Learn from seasoned chefs and cooking enthusiasts. Explore valuable tips, tricks, and techniques to refine your culinary skills. Mama Recipe is not just an app; it's a mentor in your culinary journey.
 
-# OR using Yarn
-yarn start
+Mama Recipe is more than an application; it's a thriving community of food aficionados, a treasure trove of recipes, and your dependable source for all things culinary. Join us today and embark on a gastronomic adventure like never before.
+
+Prepare to transform your kitchen into a haven of flavors with Mama Recipe! Download now and share your culinary love with the world.
+
+## Requirement
+
+Before you install this project on your Mobile Phone. You need:
+
+- **Mobile Phone with OS Android 10 or Later**, I'm using **Xiaomi Redmi 10C, Android 13** when this docs is uploaded. You can upgrade your android version for better.
+- **Stable Internet Connectivity**, This application runs online, so internet connectivity is required.
+
+## Built with
+
+- [**React Native 0.72.7**](https://reactnative.dev/docs/getting-started)
+- [**React 18.2.0**](https://react.dev/)
+- [**Firebase 10.7.1**](https://firebase.google.com/)
+- [**React Native Paper 5.11.2**](https://reactnativepaper.com/)
+- [**React Redux 9.0.4**](https://react-redux.js.org/introduction/getting-started)
+- [**Redux 5.0.0**](https://redux.js.org/introduction/getting-started)
+- [**Redux Persist 6.0.0**](https://www.npmjs.com/package/redux-persist)
+
+## Installation
+
+Click this button for download the complete built project APK:
+
+[![download](https://img.shields.io/badge/Download-32CD32)](https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0)
+
+or
+
+```
+git clone https://github.com/yongkisatrias/mama_recipe_mobile.git
 ```
 
-## Step 2: Start your Application
+After process cloning is done, you need install package dependencies, to make this project work properly, in your terminal type:
 
-Let Metro Bundler run in its _own_ terminal. Open a _new_ terminal from the _root_ of your React Native project. Run the following command to start your _Android_ or _iOS_ app:
-
-### For Android
-
-```bash
-# using npm
+```
+npm i
+npm run start
 npm run android
-
-# OR using Yarn
-yarn android
 ```
 
-### For iOS
+choose "A" for open in android or "I" for open in IOS.
 
-```bash
-# using npm
-npm run ios
+## Demo
 
-# OR using Yarn
-yarn ios
+if you want to login, without register
+
+```
+email: tes123@gmail.com
+password: 123
 ```
 
-If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
+## ScreenShoot Project
 
-This is one way to run your app — you can also run it directly from within Android Studio and Xcode respectively.
+|                        Splash Screen                         |                    Login Screen                     |                      Register Screen                      |                      Home Screen                      |
+| :----------------------------------------------------------: | :-------------------------------------------------: | :-------------------------------------------------------: | :---------------------------------------------------: |
+| ![Splash Screen](https://i.ibb.co/Z8dcz7z/splash-screen.png) | ![Login Screen](https://ibb.co/K7K8hCt) | ![Register Screen](https://i.ibb.co/S33F0NG/register.png) | ![Home Screen](https://ibb.co/wMJGRqd) |
 
-## Step 3: Modifying your App
+|                        Search Recipe                         |                              Detail Recipe                               |                           Detail Recipe                            |                            Detail Recipe Comment                             |
+| :----------------------------------------------------------: | :----------------------------------------------------------------------: | :----------------------------------------------------------------: | :--------------------------------------------------------------------------: |
+| ![Search Recipe](https://ibb.co/TkdSSWj) | ![Detail Recipe](https://ibb.co/MRt7ZQk) | ![Detail Recipe](https://ibb.co/kQrCVq0) | ![Detail Recipe Comment](https://ibb.co/f92sjYq) |
 
-Now that you have successfully run the app, let's modify it.
+|                        Hamburger Menu (Not Login)                        |                        User Profile                        |                        Edit Profile                        |
+| :----------------------------------------------------------------------: | :--------------------------------------------------------: | :--------------------------------------------------------: |
+| ![Hamburger Menu](https://ibb.co/HpYPC7q) | ![User Profile](https://ibb.co/fFzk66L) | ![Edit Profile](https://ibb.co/S5PsXtr) |
 
-1. Open `App.tsx` in your text editor of choice and edit some lines.
-2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
+## Related Project
 
-   For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+You can visit my github link related to the project:
 
-## Congratulations! :tada:
+🚀 **[Download Mama Recipe Apps](https://github.com/yongkisatrias/mama_recipe_mobile/releases/tag/v1.0.0)**
 
-You've successfully run and modified your React Native App. :partying_face:
+## Contact
 
-### Now what?
+You can reach me on:
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+[![gmail](https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:sayarayhanilham@gmail.com)
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/rayhan-ilham)
+[![github](https://img.shields.io/badge/Github-232b2b?style=for-the-badge&logo=github&logoColor=white)](https://github.com/Rayaja897)
 
-# Troubleshooting
+I know this project is not perfect, please understand if data occasionally fails to appear or requires a second click, as we are using free-tier deployment for both the front-end and back-end services. Thank you 😊
 
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+Contributions are the cornerstone of the open source community, turning it into a remarkable space for learning, inspiring, and innovating. Your contributions are **highly valued**.
 
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+```
+1. Fork the Project
+2. Create your Feature Branch (`git checkout -b your/branch`)
+3. Commit your Changes (`git commit -m 'Add amazing feature'`)
+4. Push to the Branch (`git push origin feature/yourbranch`)
+5. Open a Pull Request
+```

@@ -1,7 +1,7 @@
 # Mama Recipe Mobile
 
 <div align="center">
-<a href="https://github.com/yongkisatrias/mama_recipe_mobile">
+<a href="https://github.com/Rayaja897/pijar_food_mobile">
     <img src="https://i.ibb.co/bdjnQ0H/mama-recipe-icon.png" alt="Logo" width="150" height="170">
 </a>
 </div>
